@@ -1,0 +1,99 @@
+{"app_name":"com.apple.MobileSoftwareUpdate.UpdateBrainService","timestamp":"2018-12-06 20:03:03.64 -0600","app_version":"1.0","slice_uuid":"CB5DBF09-474C-3765-BF27-291AB951F3B7","build_version":"1","bundleID":"com.apple.MobileSoftwareUpdate.UpdateBrainService","share_with_app_devs":true,"is_first_party":true,"bug_type":"202","os_version":"iPhone OS 12.1 (16B92)","incident_id":"AD10D61F-F4E3-49BF-8C11-34B729FE0CDC","name":"com.apple.MobileSoftwareUpdate.UpdateBrainService"}
+Date/Time:       2018-12-06 20:02:43 -0600
+End time:        2018-12-06 20:03:01 -0600
+OS Version:      iPhone OS 12.1 (Build 16B92)
+Architecture:    arm64
+Report Version:  27
+Incident Identifier: AD10D61F-F4E3-49BF-8C11-34B729FE0CDC
+
+Data Source:     Microstackshots
+Shared Cache:    0x14a90000 0C5FEA28-8047-3E16-8D75-D08F69E4A69D
+
+Command:         com.apple.MobileSoftwareUpdate.UpdateBrainService
+Path:            /private/var/db/com.apple.xpc.roleaccountd.staging/com.apple.MobileSoftwareUpdate.UpdateBrainService.16777219.1095469.xpc/com.apple.MobileSoftwareUpdate.UpdateBrainService
+Identifier:      com.apple.MobileSoftwareUpdate.UpdateBrainService
+Version:         1.0 (1)
+PID:             1856
+
+Event:           cpu usage
+Action taken:    none
+CPU:             90 seconds cpu time over 134 seconds (67% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:       90s
+Limit duration:  180s
+CPU used:        90s
+Duration:        18.13s
+Steps:           19
+
+Hardware model:  iPhone7,2
+Active cpus:     2
+Boot args:        
+
+
+Heaviest stack for the target process:
+  19  ??? (libsystem_pthread.dylib + 49532) [0x19558017c]
+  19  ??? (libdispatch.dylib + 70352) [0x19534e2d0]
+  19  ??? (libdispatch.dylib + 68444) [0x19534db5c]
+  19  ??? (libdispatch.dylib + 398468) [0x19539e484]
+  19  ??? (libdispatch.dylib + 394952) [0x19539d6c8]
+  19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 114932) [0x1005c80f4]
+  19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 136468) [0x1005cd514]
+  19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 118220) [0x1005c8dcc]
+  19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 130044) [0x1005cbbfc]
+  19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 107492) [0x1005c63e4]
+  19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 20368) [0x1005b0f90]
+  19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 82304) [0x1005c0180]
+  19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 21856) [0x1005b1560]
+  17  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 77360) [0x1005bee30]
+  9   ??? (libsystem_kernel.dylib + 151804) [0x1954fd0fc]
+
+
+Powerstats for:  com.apple.MobileSoftwareUpdate.UpdateBrainService [1856]
+UUID:            CB5DBF09-474C-3765-BF27-291AB951F3B7
+Path:            /private/var/db/com.apple.xpc.roleaccountd.staging/com.apple.MobileSoftwareUpdate.UpdateBrainService.16777219.1095469.xpc/com.apple.MobileSoftwareUpdate.UpdateBrainService
+Architecture:    arm64
+Parent:          UNKNOWN [1]
+UID:             0
+Sudden Term:     Tracked (allows idle exit)
+Footprint:       67.12 MB
+Pageins:         895 pages
+Start time:      2018-12-06 20:02:43 -0600
+End time:        2018-12-06 20:03:01 -0600
+Num samples:     19 (100%)
+CPU Time:        13.207s
+Primary state:   15 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified
+User Activity:   0 samples Idle, 0 samples Active, 19 samples Unknown
+Power Source:    0 samples on Battery, 0 samples on AC, 19 samples Unknown
+  19  ??? (libsystem_pthread.dylib + 49532) [0x19558017c]
+    19  ??? (libdispatch.dylib + 70352) [0x19534e2d0]
+      19  ??? (libdispatch.dylib + 68444) [0x19534db5c]
+        19  ??? (libdispatch.dylib + 398468) [0x19539e484]
+          19  ??? (libdispatch.dylib + 394952) [0x19539d6c8]
+            19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 114932) [0x1005c80f4]
+              19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 136468) [0x1005cd514]
+                19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 118220) [0x1005c8dcc]
+                  19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 130044) [0x1005cbbfc]
+                    19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 107492) [0x1005c63e4]
+                      19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 20368) [0x1005b0f90]
+                        19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 82304) [0x1005c0180]
+                          19  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 21856) [0x1005b1560]
+                            17  ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 77360) [0x1005bee30]
+                              9   ??? (libsystem_kernel.dylib + 151804) [0x1954fd0fc]
+                              4   ??? (Bom + 17112) [0x1a13e92d8]
+                                4   <User mode>
+                              2   ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 77752) [0x1005befb8]
+                                2   ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 66272) [0x1005bc2e0]
+                                  2   ??? (libsystem_kernel.dylib + 142456) [0x1954fac78]
+                              1   ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 78004) [0x1005bf0b4]
+                                1   ??? (libsystem_kernel.dylib + 147268) [0x1954fbf44]
+                              1   ??? (com.apple.MobileSoftwareUpdate.UpdateBrainService + 77996) [0x1005bf0ac]
+                                1   ??? (libsystem_malloc.dylib + 54264) [0x19553e3f8]
+                                  1   ??? (libsystem_kernel.dylib + 97796) [0x1954efe04]
+                            2   ??? (libsystem_kernel.dylib + 150148) [0x1954fca84]
+
+  Binary Images:
+           0x1005ac000 -                ???  com.apple.MobileSoftwareUpdate.UpdateBrainService <CB5DBF09-474C-3765-BF27-291AB951F3B7>  /private/var/db/com.apple.xpc.roleaccountd.staging/com.apple.MobileSoftwareUpdate.UpdateBrainService.16777219.1095469.xpc/com.apple.MobileSoftwareUpdate.UpdateBrainService
+           0x19533d000 -        0x1953adfff  libdispatch.dylib                                 <60265147-21CC-3A5B-A928-5AF4E75B3982>  /usr/lib/system/libdispatch.dylib
+           0x1954d8000 -        0x195502fff  libsystem_kernel.dylib                            <A5B50E5B-B599-307D-8C63-99209D44C3D9>  /usr/lib/system/libsystem_kernel.dylib
+           0x195531000 -        0x195554fff  libsystem_malloc.dylib                            <23A011ED-24A7-303C-82A0-4BF8D846A409>  /usr/lib/system/libsystem_malloc.dylib
+           0x195574000 -        0x195584fff  libsystem_pthread.dylib                           <5EA65AB9-0A7F-3716-A775-FCF0A7122CC8>  /usr/lib/system/libsystem_pthread.dylib
+           0x1a13e5000 -        0x1a1415fff  Bom                                               <D1D6AF38-F729-3103-AFCD-D8F23CC2CD01>  /System/Library/PrivateFrameworks/Bom.framework/Bom
